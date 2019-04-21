@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Teaser Image
+    <div class="teaserimage-image" {% if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
     </div>
+    <h1>Hang Yuan</h1>
 </div>
 
 <!-- blog desp 
@@ -46,28 +46,26 @@ layout: default
         </div>
 
         <div class="isRight">
+          <div class="profi-nav">
             <h2>Hang Yuan</h2>
-            <div class="f6">Social media</div>
-            <nav> </nav>
-            <div>Ad</div>
-            <div>Follow me</div>
+            <p>An AI researcher in training and an entrepreneur at heart. </p>
+            <p>Currently@<a href="https://www.epfl.ch">EPFL</a> and moving to <a href="https://www.ox.ac.uk">Oxford</a> this Oct. </p>
+            <p>Spent time with: <a href="https://www.bloomberg.com">Bloomberg</a>, <a href="https://www.is.mpg.de">MPI-IS</a>, <a href="https://www.jacobs-university.de">Jacobs</a> and <a href="https://www.cmu.edu">CMU</a> .</p>
+            <p>More @<a href="https://www.linkedin.com/in/hang-calvin-yuan-ba446456/">Linkedin</a></p>
+            <p></br> </p>
+          </div>
 
-          <h5 class="index-headline featured"><span>Supported by</span></h5>
-          <footer class="site-footer">
-            <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-            <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
-            <div class="inner">
-              <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
-            </div>
-          </footer>
+          <nav class="panel-nav">
+            <ul>
+                <a href="{{   }}"><li>About</li></a>
+                <a href="{{   }}"><li>Posts</li></a>
+                <a href="{{   }}"><li>Research</li></a>
+            </ul>
+
+          </nav>
+
         </div>
       </div>
-
-    <div class="isRight">
-        <div class="sidebar" style="width:100%">
-
-          </div>
-    </div>
 
 
     <!-- change to scroll 
