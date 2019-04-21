@@ -38,7 +38,7 @@ body
   font-feature-settings: "liga", "dlig"
   a
     color: #0080ff
-    font-weight: bold
+    font-weight: 120
     text-decoration: none
     border-bottom: 2px solid #00ffff
     transition: border-bottom 0.5s
@@ -161,6 +161,19 @@ body
         padding-bottom: $rs*2
       .index-headline
         padding-bottom: 32px
+      .post
+        .article-item
+          .post-meta
+            color: grey
+            font-weight: bold
+            opacity: 0.7
+          .post-header
+            .post-title
+              font-weight: 100
+      h3
+        color: black
+        font-weight: bold
+        font-size: 1.8rem
       .author-image
         display: block
         width: 80px
@@ -246,41 +259,7 @@ body
           padding-bottom: 18px
           font-weight: 700
           color: #333
-      article
-        padding: 40px 0
-        border-bottom: 1px solid #f2f2f0
-        &:last-child
-          border-bottom: 0px
-        .post-title
-          letter-spacing: -0.02em
-          font-weight: 700
-          font-style: normal
-          display: block
-          font-size: 28px
-          line-height: 1.1
-          margin: 0 0
-          a
-            text-decoration: none
-            color: #333332
-            &:hover
-              text-decoration: none
-        .post-excerpt
-          letter-spacing: -0.02em
-          font-weight: 300
-          font-style: normal
-          font-size: 20px
-          line-height: 1.3
-          color: #666665
-        .post-meta
-          font-size: 14px
-          color: #b3b3b1
-          line-height: 30px
-          a
-            color: #b3b3b1
-            text-decoration: none
-            &:hover
-              text-decoration: underline
-              
+
 .container.featured
   padding-bottom: 40px
 
@@ -379,7 +358,7 @@ body
         padding-top: 33%
         z-index: 1
     .post-meta
-      osition: absolute
+      position: absolute
       bottom: $rs*5
       left: 30%
       right: 30%
@@ -437,7 +416,7 @@ body
   .noarticleimage
     .post-meta
       font-family: $font-sans
-      padding-top: 60px
+      padding-top: 160px
     .post-title
       font-weight: 700
       font-style: normal
@@ -612,32 +591,7 @@ body
         padding-left: 100px
         &.published
           color: #999
-    .isRight
-      float: right
-      width: 47%
-      @include box-sizing(border-box)
-      @include respond-to(800)
-        width: 100%
-      .index-headline
-        padding-bottom: 32px
-      .site-footer
-        margin: 0
-        padding: 0
-        color: #333
-        text-align: left
-        font-size: 14px
-        line-height: 1.3
-        color: #999
-        a
-          color: #333
-          text-decoration: none
-          &:hover
-            text-decoration: underline
-        .poweredby
-          display: block
-          padding-bottom: 18px
-          font-weight: 700
-          color: #333
+
 .share
   text-align: right
   padding: 20px 0 0
