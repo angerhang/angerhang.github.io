@@ -30,7 +30,7 @@ layout: default
     <div class="cf frame">
       <div class="landing cf">
         <div class="isLeft cf">
-          {% for post in paginator.posts %}
+          {% for post in site.posts %}
             {% assign currentdate = post.date | date: "%Y" %}
             {% if forloop.first == true %}
               {% if currentdate != date %}
@@ -73,7 +73,7 @@ layout: default
           <nav class="panel-nav">
             <ul>
                 <a href="{{   }}"><li>About</li></a>
-                <a href="{{   }}"><li>Posts</li></a>
+                <a href="{{ site.url }}{{ site.baseurl }}"><li>Posts</li></a>
                 <a href="{{   }}"><li>Research</li></a>
                 <a href="{{   }}"><li>News</li></a>
             </ul>

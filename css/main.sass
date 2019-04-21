@@ -83,12 +83,12 @@ body
     
 .blog-header
   width: 100%
-  max-width: 640px
+  max-width: 900px
   margin: 0 auto
   position: relative
   padding: 0
   @include box-sizing(border-box)
-  @include respond-to(800)
+  @include respond-to(900)
     padding: 0 $rs
   .blog-logo
     width: $rs*7.5
@@ -130,19 +130,16 @@ body
     text-align: center
     color: #ccc
 
-
-
 .content
   width: 100%
-  max-width: 640px 
+  max-width: 900px 
   margin: 0 auto
   @include box-sizing(border-box)
-  @include respond-to(800)
+  @include respond-to(900)
     padding: 0 $rs*2
   .landing
-    padding: 40px 0
     border-bottom: 1px solid #f2f2f0
-    padding: 50px 0
+    padding: 30px 0
     font-family: $font-sans
     hr
       border: 0
@@ -156,12 +153,13 @@ body
       float: left
       width: 70%
       @include box-sizing(border-box)
-      @include respond-to(800)
+      @include respond-to(900)
         width: 100%
         padding-bottom: $rs*2
       .index-headline
         padding-bottom: 32px
       .post
+        margin-right: 10px
         .article-item
           .post-meta
             color: grey
@@ -169,7 +167,8 @@ body
             opacity: 0.7
           .post-header
             .post-title
-              font-weight: 100
+              font-weight: 150
+              font-size: 1.2rem
       h3
         color: black
         font-weight: bold
@@ -203,7 +202,7 @@ body
       width: 30%
       border-left: 1px solid #1C54A6
       @include box-sizing(border-box)
-      @include respond-to(800)
+      @include respond-to(900)
         width: 100%
       h2
         color: #1955AD
@@ -365,7 +364,7 @@ body
       z-index: 9
       font-family: $font-sans
       @include box-sizing(border-box)
-      @include respond-to(800)
+      @include respond-to(900)
         left: $rs
         right: $rs
     .post-title
@@ -556,7 +555,7 @@ body
       float: left
       width: 47%
       @include box-sizing(border-box)
-      @include respond-to(800)
+      @include respond-to(900)
         width: 100%
         padding-bottom: $rs*2
       .index-headline
@@ -666,6 +665,8 @@ body
       border-radius: 999em
       line-height: 44px
       padding: 0 18px
+    a
+      border-style: none
 
 #disqus_thread
   margin-top: 50px
