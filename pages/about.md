@@ -1,6 +1,6 @@
 ---
 layout: exp
-title: "About page"
+title: "About"
 date: 2016-06-21
 comments: true
 image: /assets/images/aboutPic.jpg

@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "NIce"
+title: "News"
 date: 2016-06-21
 comments: true
 cover_name: The 4th dimension
