@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <!-- content start -->
+
+    <div class="page-content">
+      <div class="wrapper">
+          <div class="teaserimage">
+              <div class="teaserimage-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
+                  Article Image
+              </div>
+              {% if page.cover_name %}
+                <h1>{{ page.cover_name }}</h1>
+              {% else %}
+                <h1>Hang Yuan</h1>
+              {% endif %}
+          </div>
+
+        
+<main class="content" role="main">
+
+    <div class="cf frame">
+      <div class="landing cf">
+        <div class="isLeft cf">
+            <section class="post-content">
+              <div class="news">
+                  {{content}}
+              </div>
+            </section>
+        </div>
+
+        <div class="isRight">
+          <div class="profi-nav">
+            <h2>Hang Yuan</h2>
+            <p>An AI researcher in training and an entrepreneur at heart. </p>
+            <p>Currently@<a href="https://www.epfl.ch">EPFL</a> and moving to <a href="https://www.ox.ac.uk">Oxford</a> this Oct. </p>
+            <p>Spent time with: <a href="https://www.bloomberg.com">Bloomberg</a>, <a href="https://www.is.mpg.de">MPI-IS</a>, <a href="https://www.jacobs-university.de">Jacobs</a> and <a href="https://www.cmu.edu">CMU</a> .</p>
+            <p>More @<a href="https://www.linkedin.com/in/hang-calvin-yuan-ba446456/">Linkedin</a></p>
+            <p></br> </p>
+          </div>
+
+          <nav class="panel-nav">
+            <ul>
+                <a href="{{ site.baseurl }}{% link pages/about.md %}"><li>About</li></a>
+                <a href="{{ site.url }}{{ site.baseurl }}"><li>Posts</li></a>
+                <a href="{{ site.baseurl }}{% link pages/research.md %}"><li>Research</li></a>
+                <a href="{{ site.baseurl }}{% link pages/news.md %}"><li>News</li></a>
+            </ul>
+
+          </nav>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- content end -->
+
+    {% include footer.html %}
+    {% include javascripts.html %}
+
+  </body>
+
+</html>

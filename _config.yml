@@ -14,7 +14,7 @@ logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/landing_photo.jpg"
+cover: "/assets/images/new.jpg"
 
 name: 'Hang Yuan'
 author: 'Hang Yuan'
@@ -23,14 +23,15 @@ author_image: "/assets/images/author.jpg"
 paginate:	5
 
 url: "http://angerhang.github.io" # the base hostname & protocol for your site
+abouturl: "/_pages/about.md"
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
 
 #fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+disqus: angerhang
 
-#google_analytics: UA-XXXXX-X
+google_analytics: UA-55002898-4
 
 # social icons and sharing options
 social:
@@ -40,14 +41,12 @@ social:
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
+  - icon:	facebook
+    url:	https://facebook.com/???
+    desc: Connect with me facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
   - icon:	github
     url:	https://github.com/angerhang
     desc:	Fork me on github
