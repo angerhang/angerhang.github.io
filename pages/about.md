@@ -3,7 +3,7 @@ layout: exp
 title: "About page"
 date: 2016-06-21
 comments: true
-image: /assets/images/about_pic.jpg
+image: /assets/images/aboutPic.jpg
 ---
 I was raised in China and began to study aboard since high school. I have been extremely lucky to have studied
 at various great places in the US and Europe. Originally, I was trained as a computer scientist with a focus in
