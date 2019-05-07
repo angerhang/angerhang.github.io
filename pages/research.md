@@ -18,9 +18,9 @@ I also spent time at MPI with Prof. [Grosse-Wentrup](https://ni.cs.univie.ac.at)
 
 ### Mathematical Knowledge Management (MKM)
 
-| ![sTeX](/assets/images/mmt.png) [PDF](https://github.com/angerhang/reinforcement-learning-cheat-sheet) |  **2016 Jun: Mixing Surface Languages for OMDoc** <br/><br/> The formalism of mathmatics: MathML, OpenMath and OMDoc are machine-friendly formats for math so that the machines can do search, automated proving and cross-referencing easily. TeX is the main driving horse for high quality mathematics documents authoring. A variant of TeX that allows for structural formats, enables us to transform those documents into OMDoc with the help of LaTeXML sTeX plugin to let machines operate on the documents. | 
+| ![sTeX](/assets/images/mmt.png) [PDF](/assets/files/cicm_2016.pdf) |  **2016 Jun: Mixing Surface Languages for OMDoc** <br/><br/> The formalism of mathmatics: MathML, OpenMath and OMDoc are machine-friendly formats for math so that the machines can do search, automated proving and cross-referencing easily. TeX is the main driving horse for high quality mathematics documents authoring. A variant of TeX that allows for structural formats, enables us to transform those documents into OMDoc with the help of LaTeXML sTeX plugin to let machines operate on the documents. | 
 
 ### Misc
 
-* [16-720 Semester project: facial verifier](/assets/files/cicm_2016.pdf)
+* [16-720 Semester project: facial verifier](/assets/files/cv_poster.pdf)
 * [The Evolution of Web Search Engines: Past, Present and Future](/assets/files/bigData.pdf)
