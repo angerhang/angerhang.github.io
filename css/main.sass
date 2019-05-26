@@ -69,20 +69,32 @@ body
     bottom: 0
     z-index: 1
     text-indent: -9999px
-  h1
-    overflow: visible
-    font-size: 4vw
-    position: absolute
-    padding: 15px 15px
-    margin-left: 0px
-    margin-top: 370px
-    margin-bottom: 0px
-    float: right
-    color: black
-    background-color: white
-    z-index: 2
-    line-height: 1.25
-    
+  @media(max-width: 600px)
+    h1
+      font-size: 1.75rem
+      overflow: visible
+      position: absolute
+      padding: 15px 15px
+      margin-top: 370px
+      margin-bottom: 0px
+      float: right
+      color: black
+      background-color: white
+      z-index: 2
+      line-height: 1.25
+  @media(min-width: 600px)
+    h1
+      font-size: 3.0rem
+      overflow: visible
+      position: absolute
+      padding: 15px 15px
+      margin-top: 370px
+      margin-bottom: 0px
+      float: right
+      color: black
+      background-color: white
+      z-index: 2
+      line-height: 1.25
 .blog-header
   width: 100%
   max-width: 900px
