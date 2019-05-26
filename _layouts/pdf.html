@@ -4,7 +4,7 @@
 <html>
   {% include head.html %}
   <body itemscope itemtype="http://schema.org/Article">
-    <object data="{% if page.pdf %}{{ page.pdf | prepend: site.baseurl }}{% endif %}" width="100%" height="1000" type='application/pdf'/>
+    <object style="position:fixed" data="{% if page.pdf %}{{ page.pdf | prepend: site.baseurl }}{% endif %}" width="100%" height="1000" type='application/pdf'/>
   </body>
   {% include javascripts.html %}
 </html>
