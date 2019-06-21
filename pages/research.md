@@ -12,6 +12,7 @@ I also spent time at MPI with Prof. [Grosse-Wentrup](https://ni.cs.univie.ac.at)
 
 ### Machine learning
 
+| ![Delayed Attack Samples](/assets/images/da_sample.jpg) [PDF](/assets/files/hang_thesis.pdf) |  **2019 Jun: A Primer on the Delayed Adversarial Attack in Using Recurrent Neural Networks for Reinforcement Learning** <br/><br/> An introduction of a series of work on delayed adversarial attack in deep learning. We will make the code available soon.|
 | ![Breakout](/assets/images/atari.jpg) [Repo](https://github.com/angerhang/reinforcement-learning-cheat-sheet) |  **2019 Feb: Reinforcement Learning Cheat Sheats** <br/><br/> A collection of theories and applications of reinforcement learning as part of my master thesis. | 
 | ![Echo State Network](/assets/images/esn.png) [Repo](https://github.com/angerhang/thesis) [PDF](/assets/files/thesis.pdf) |  **2017 Jun: Motor Learning Skill Classification Using Echo State Networks** <br/><br/> ESNs are a type of Recurrent Neural Networks (RNNs) that are easy to train but still maintain the power of capturing the temporal information that do. In my bachelor thesis, I constructed ESNs for motor learning skill classification on EEG data. Additionally, I also developed new methods on how to increase the interpabiltiy of ESNs.  | 
 
