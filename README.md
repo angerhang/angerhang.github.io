@@ -2,6 +2,15 @@ Hang's blog
 ======== 
 This repo is based on the medium like Jekyll blog [mediator](https://github.com/dirkfabisch/mediator) and takes the minimist design off [Zoch Holman's blog](https://zachholman.com) whose code I couldn't find :D  
 
+How to use
+---------
+```shell
+# install required gems
+bundle install
+
+# run the jekyll server
+bundle exec jekyll serve
+```
 
 Licensing
 ---------

@@ -5,16 +5,12 @@ date: 2016-06-21
 comments: true
 image: /assets/images/aboutPic.jpg
 ---
-I was raised in China and began to study aboard since high school. I have been extremely lucky to have studied
-at various great places in the US and Europe. Originally, I was trained as a computer scientist with a focus in machine learning (ML) but later I gradually started to gain more interests in the neuroscience/healthcare applications of ML techniques to advance the boundaries of these fields.
+I was raised in China and began to study aboard since high school. I have been extremely lucky to have studied at various great places in the US and Europe. Originally, I was trained as a computer scientist with a focus in machine learning (ML) but later I gradually started to gain more interests in the neuroscience/healthcare applications of ML techniques to advance the boundaries of these fields.
 
-In addition to my academic interests, I am a big fan of using advanced techniques to solve challenging business
-problems of different kinds. That's why I have founded two startups, ShareCo and [inAI](http://www.inai.io), with friends during my study. I do
-believe that technologies will play a big role in making this world a better place and I would like to contribute by translating the cutting-edge research into tangible real-world applications.
+In addition to my academic interests, I am a big fan of using advanced techniques to solve challenging business problems of different kinds. That's why I have founded two startups, ShareCo and [inAI](http://www.inai.io), with friends during my study. I do believe that technologies will play a big role in making this world a better place and I would like to contribute by translating the cutting-edge research into tangible real-world applications.
 
 ### What am I working on now?
-Trying to finish up my master thesis in reinforcement learning and getting ready to 
-start my PhD course at Oxford in healthcare AI.
+Trying to finish up my master thesis in reinforcement learning and getting ready to start my PhD course at Oxford in healthcare AI.
 
 ### What is my long-term goal?
 Create a tech startup that solves some high-impact problems the world is facing. Don't really know what the starup will be about but it could be anything.
