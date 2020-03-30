@@ -6,7 +6,7 @@ gems:
 # Site settings
 title: "Hang Yuan"
 description: > # this means to ignore newlines until "email:"
-   A scientist in training and an entrepreneur at heart
+   An AI researcher in training and an entrepreneur at heart.
 
 email: angerhangy@mail.com
 #blog logo
@@ -26,7 +26,7 @@ url: "http://hangyuan.xyz" # the base hostname & protocol for your site
 abouturl: "/_pages/about.md"
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: '@angerhang'
 
 #fill in disqus shortname to use disqus
 disqus: angerhang
