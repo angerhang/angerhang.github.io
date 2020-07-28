@@ -6,6 +6,10 @@ comments: true
 cover_name: The 4th dimension
 image: /assets/images/guiyang.jpg
 ---
+### 2020
+#### June 30
+Two of book chapthers in [Deep Reinforcement Learning Book](https://www.springer.com/in/book/9789811540943) were published by Springer Nature.
+
 ### 2019
 #### July 20-31
 Instructor at [TechX Academy](https://www.techx.academy) in Shanghai.
