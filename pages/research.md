@@ -27,6 +27,13 @@ PC Member for ML4Health Neurips 2020
 
 | ![Reasonable Ethics Scale](/assets/images/scale.png) [PDF](https://arxiv.org/abs/2011.11393) |  **2020 Dec: Training Ethically Responsible AI Researchers: a Case Study** <br/><br/> *NBAIR Workshop, Neurips, 2020* <br/><br/> Relfection on ethics training for AI researchers. | 
 
+
+### Teaching
+
+* Tutor for Artificial Intelligence, Oxford, 2021 Spring
+* Tutor for Centre for Doctoral Training Health Data Science, CDT for HDS, wearable modules and data challenge, Oxford, 2021 Spring
+* Teaching assistant for Computation and Complexity, Jacobs University, 2017
+
 ### Book chapters
 * Chap 1 and Chap 2 in [Deep Reinforcement Learning: Fundamentals, Research and Applications
 ](https://deepreinforcementlearningbook.org/), Springer 2020 ISBN 978-981-15-4094-3 
