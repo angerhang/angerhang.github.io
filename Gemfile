@@ -5,3 +5,4 @@ gem 'github-pages'
 gem 'bourbon'
 gem 'jemoji'
 gem "neat"
+gem "webrick", "~> 1.7"
