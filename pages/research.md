@@ -33,8 +33,15 @@ PC Member for ML4Health 2020, 2021
 | ![Reasonable Ethics Scale](/assets/images/scale.png) [PDF](https://arxiv.org/abs/2011.11393) |  **2020 Dec: Training Ethically Responsible AI Researchers: a Case Study** <br/><br/> *NBAIR Workshop, Neurips, 2020* <br/><br/> Relfection on ethics training for AI researchers. | 
 
 
-### Teaching
+### Talks
+* 2022, summer (upcoming): OXSTAT, Machine Learning for Population Health, Oxford
+* 2022, spring: Self-supervised learning for wearables, Colby College, USA 
+* 2021, summer: CDT Symposium, Trinity College, Oxford
+* 2021, summer: European insomnia network, virtual
 
+
+### Teaching
+* Tutor for Centre for Doctoral Training Health Data Science, CDT for HDS, vital signs and mortality prediction data challenge, Oxford, 2022 Spring
 * Tutor for Artificial Intelligence, Oxford, 2021 Spring
 * Tutor for Centre for Doctoral Training Health Data Science, CDT for HDS, wearable modules and data challenge, Oxford, 2021 Spring, 2021 Winter
 * Teaching assistant for Computation and Complexity, Jacobs University, 2017
