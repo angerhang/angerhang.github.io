@@ -34,10 +34,10 @@ PC Member for ML4Health 2020, 2021
 
 
 ### Talks
-* 2022, summer (upcoming): OXSTAT, Machine Learning for Population Health, Oxford
-* 2022, spring: Self-supervised learning for wearables, Colby College, USA 
-* 2021, summer: CDT Symposium, Trinity College, Oxford
-* 2021, summer: European insomnia network, virtual
+* 2022, Summer (upcoming): OXSTAT, Machine Learning for Population Health, Oxford
+* 2022, Spring: Self-supervised learning for wearables, Colby College, virtual 
+* 2021, Summer: CDT Symposium, Trinity College, Oxford
+* 2021, Summer: European insomnia network, virtual
 
 
 ### Teaching
