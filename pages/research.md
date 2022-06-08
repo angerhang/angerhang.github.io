@@ -15,26 +15,35 @@ PC Member for ML4Health 2020, 2021
 
 ### Machine learning
 
-| ![Example of forward and backward time flow](/assets/images/sample_aot.png) [Poster](/assets/files/aot.pdf) |  **2021 Jun: Learning the Arrow of Time for Human Activity Recognition: A Study on 700,000 Person-days of Wearable Data** <br/><br/> *Self-supervised-learning Workshop, ICML, 2021* <br/><br/> |
+**Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data**
+ <br/> *arXiv, 2022* <br/> 
+ <sub><sup> [Paper](https://arxiv.org/abs/2206.02909)  &nbsp;  [Code](https://github.com/OxWearables/ssl-wearables)  &nbsp; [Web](https://oxwearables.github.io/ssl-wearables/) </sup></sub>
 
 
-| ![Delayed Attack Samples](/assets/images/da_sample.jpg) [PDF](/assets/files/hang_thesis.pdf) |  **2019 Jun: A Primer on the Delayed Adversarial Attack in Using Recurrent Neural Networks for Reinforcement Learning** <br/><br/> |
+**Learning the Arrow of Time for Human Activity Recognition: A Study on 700,000 Person-days of Wearable Data**
+ <br/> *Self-supervised-learning Workshop, ICML, 2021* <br/> 
+ <sub><sup>  [Poster](/assets/files/aot.pdf)   </sup></sub>
 
 
-| ![Echo State Network](/assets/images/esn.png) [Repo](https://github.com/angerhang/thesis) [PDF](/assets/files/thesis.pdf) |  **2017 Jun: Motor Learning Skill Classification Using Echo State Networks** <br/><br/>  | 
+**A Primer on the Delayed Adversarial Attack in Using Recurrent Neural Networks for Reinforcement Learning**
+ <br/> *Master thesis, EPFL, 2019* <br/> 
+ <sub><sup>   [Paper](/assets/files/hang_thesis.pdf)  </sup></sub>
 
 
-### Mathematical Knowledge Management (MKM)
 
-| ![sTeX](/assets/images/mmt.png) [PDF](/assets/files/cicm_2016.pdf) |  **2016 Jun: Mixing Surface Languages for OMDoc** <br/><br/> | 
+### MISC
 
-### Workshop papers
+**Mixing Surface Languages for OMDoc**
+ <br/> *2016* <br/> 
+ <sub><sup>   [Paper](/assets/files/cicm_2016.pdf)   </sup></sub>
 
-| ![Reasonable Ethics Scale](/assets/images/scale.png) [PDF](https://arxiv.org/abs/2011.11393) |  **2020 Dec: Training Ethically Responsible AI Researchers: a Case Study** <br/><br/> *NBAIR Workshop, Neurips, 2020* <br/><br/> Relfection on ethics training for AI researchers. | 
+**Training Ethically Responsible AI Researchers: a Case Study**
+ <br/>  *NBAIR Workshop, Neurips, 2020*<br/> 
+ <sub><sup>   [Paper](https://arxiv.org/abs/2011.11393)   </sup></sub>
 
 
 ### Talks
-* 2022, Summer (upcoming): OXSTAT, Machine Learning for Population Health, Oxford
+* 2022, Summer: OXSTAT, Machine Learning for Population Health, Oxford
 * 2022, Spring: Self-supervised learning for wearables, Colby College, virtual 
 * 2021, Summer: CDT Symposium, Trinity College, Oxford
 * 2021, Summer: European insomnia network, virtual

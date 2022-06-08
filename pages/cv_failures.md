@@ -36,6 +36,7 @@ For my undergraduate, this list is much longer. I didn't get into all of the 10+
 * Dartmouth
 * Bowdoin 
 * Hong Kong University
+
 There are a few other places that I applied to but couldn't remember.
 
 
