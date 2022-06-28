@@ -6,10 +6,9 @@ comments: true
 cover_name: The World of Science
 image: /assets/images/research_cover.jpg
 ---
-50% of my research is on machine learning and the other 50% lies in its applications in health. Currently, my primary work is focused around semi-supervised learning for wearables. My doctoral research is supervised by Prof. [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and Prof. [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle). My research has also been generously sponsored by the Li Kai Shing foundation.
+My primary research interest lie into ML4Health. My doctoral research is supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by the Li Kai Shing foundation and Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
 
-Back at Jacobs, I first worked with Prof. [Michael Kohlhase](https://kwarc.info/people/mkohlhase/) and then my real ML research started with Prof. [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and Prof. [Benn Godde](https://www.researchgate.net/profile/Ben_Godde). 
-I also spent time at MPI with Prof. [Grosse-Wentrup](https://ni.cs.univie.ac.at) and at EPFL with Prof. [Courtine](https://courtine-lab.epfl.ch) on brain-computer-interface research which was super interesting. My master thesis supervisors are Dr. [François Fleuret](https://www.idiap.ch/~fleuret/) and Dr. [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
+Previously I have worked with [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and [Benn Godde](https://www.researchgate.net/profile/Ben_Godde) on echo state neural networks for my undergraduate thesis. My master thesis were supervised by [François Fleuret](https://www.idiap.ch/~fleuret/) and [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
 
 PC Member for ML4Health 2020, 2021
 
@@ -33,13 +32,14 @@ PC Member for ML4Health 2020, 2021
 
 ### MISC
 
-**Mixing Surface Languages for OMDoc**
- <br/> *2016* <br/> 
- <sub><sup>   [Paper](/assets/files/cicm_2016.pdf)   </sup></sub>
-
 **Training Ethically Responsible AI Researchers: a Case Study**
  <br/>  *NBAIR Workshop, Neurips, 2020*<br/> 
  <sub><sup>   [Paper](https://arxiv.org/abs/2011.11393)   </sup></sub>
+
+
+**Mixing Surface Languages for OMDoc**
+ <br/> *2016* <br/> 
+ <sub><sup>   [Paper](/assets/files/cicm_2016.pdf)   </sup></sub>
 
 
 ### Talks
@@ -51,9 +51,10 @@ PC Member for ML4Health 2020, 2021
 
 ### Teaching
 * Tutor for Centre for Doctoral Training Health Data Science, CDT for HDS, vital signs and mortality prediction data challenge, Oxford, 2022 Spring
-* Tutor for Artificial Intelligence, Oxford, 2021 Spring
+* Tutor for *Machine Learning*, Oxford, 2021, Fall
+* Tutor for *Artificial Intelligence*, Oxford, 2021 Spring
 * Tutor for Centre for Doctoral Training Health Data Science, CDT for HDS, wearable modules and data challenge, Oxford, 2021 Spring, 2021 Winter
-* Teaching assistant for Computation and Complexity, Jacobs University, 2017
+* Teaching assistant for *Computation and Complexity*, Jacobs University, 2017
 
 ### Book chapters
 * Chap 1 and Chap 2 in [Deep Reinforcement Learning: Fundamentals, Research and Applications
