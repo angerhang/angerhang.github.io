@@ -19,6 +19,7 @@ cover: "/assets/images/aboutPic.jpg"
 name: 'Hang Yuan'
 author: 'Hang Yuan'
 author_image: "/assets/images/author.jpg"
+markdown: kramdown
 
 paginate:	5
 

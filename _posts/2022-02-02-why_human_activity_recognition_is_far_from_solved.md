@@ -3,6 +3,7 @@ layout: post
 title: Why human activity recognition is far from solved  
 date: 2022-08-02
 comments: true
+usemathjax: true
 ---
 
 
@@ -10,3 +11,4 @@ comments: true
 Now let's try type some math symbols $$ a + b = c $$
 
 This is great. Let's test it online.
+
