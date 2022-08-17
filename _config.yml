@@ -23,7 +23,7 @@ markdown: kramdown
 
 paginate:	5
 
-url: "http://hangyuan.xyz" # the base hostname & protocol for your site
+url: "https://hangyuan.xyz" # the base hostname & protocol for your site
 abouturl: "/_pages/about.md"
 baseurl: ""
 #used to display twitter cards
