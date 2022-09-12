@@ -22,24 +22,16 @@ I. [Difficult to define what is an activity. Temporal definition](#i-hard-to-def
 
 II. [Hetergenous benchmark baselines](#ii-hetergenous-benchmark-baselines)
 
-III. Getting groud-truth data for HAR is both expensive and difficult
+III. [Getting groud-truth data for HAR is both expensive and difficult](#iii-getting-groud-truth-data-for-har-is-both-expensive-and-difficult)
 
-IV. Activity profile could differ based different characeterstics of different individuals such as weight/height/race/culture
+IV. [Diverse characteristics contribute to different activity profiles](#iv-diverse-characteristics-contribute-to-different-activity-profiles)
 
-V. Lacking standarslization in data storage, processing and analytics 
-
-In this post, we will entail each aspect that makes HAR difficult and mitigations to these challenges. Hopefully, by reading this post, more people become wary of the limitations of current technology and points out prompsing directions if people want to engage with HAR research.
+V. [Lacking standardization in data storage, processing and analytics](#v-lacking-standarslization-in-data-storage-processing-and-analytics) 
 
 ## I. Hard to define what is an activity 
-For us humans, it is obvious when someone is running or doing dishes. However, it is much harder for the machines to know what constitues an activity. Take walking for an example. Despite its perceived simplicity, designing a step counter is non-trivial. 
+For us humans, it is obvious when someone is running or doing dishes. However, it is much harder for machines to know what constitutes an activity. Take walking for an example. Despite its perceived simplicity, designing a step counter is non-trivial. 
 
-Below you can find differnt types of gait patterns
-
-Depending on a person's age and the environment, we could see a a perfect gait cycle on the one end, or something very sporadic on the other end. The `duration`, `trajectory`, and `geometric characteritiscs` of even the same activity class can be totally different. Even getting walking right is not easy, let alone other activities that require more complex coordination of body movement such as dancing. So it is really challenging to define what is an activity.
-
-[The Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/home?authuser=0) is one of the major initiaties that tries to standardsie the type of physical activities and their corresponding energy expediture. The compedium is one of the common reference in depimiological studies. Whereas, more recently, 4d2go also proposed to do something similar by having over 200+ activitu taxonmoy to label its ego-centric video stream for VR applications. Depending on the type of applications, one might opt to use a different activity vocabulary. The gist is there are several standard ways to representing these categories and given one's specific use, we might wish to adaopt or create our own definitions. 
-
-Except for the common activities, there are many activities special in HCI but haven't been widely recgonised yet. For example, on the older apple watches whose battery doesn't last very long. One way Apple tries to perseve the battery is that only flash the screen when they detect a user has a motion to lift the watch up and facing the user himsefl/herself. This type of motion might be specific to the type of device and the purpose of the interaction, therefore, that adds more complexit to have a general HAR model that can detect every single activity that we have
+Below you can find three different gait patterns:
 
 
 Regular walk            |  Irregular walk    | Edler Strolling |
@@ -47,6 +39,16 @@ Regular walk            |  Irregular walk    | Edler Strolling |
  <img src="/assets/gifs/walk1.gif" width="300"> | <img src="/assets/gifs/walk2.gif" width="300">| <img src="/assets/gifs/walk3.gif" width="300">|
 
 Source: GIPHY
+
+Depending on a person's age and the environment, we could see a perfect gait cycle in young adults, however, in older individuals, we might see a much more gradual and perhaps irregular gait cycle. The `duration`, `trajectory`, and `geometric `characteristics of even the same activity type can be vastly different, not even to mention other activities that require more complex body coordination. 
+
+Well, some might suggest that instead of having an activity classed called "walk", let's have many "walk" types to account for the differences in how people. What a brilliant idea!  [The Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/home?authuser=0) is one of the major initiatives that aim to have a universal activity classification. The compendium is widely used in epidemiological studies. Whereas, more recently, [ego4d](https://ego4d-data.org) also proposed to do something similar by having over 200+ activity taxonomy to label its ego-centric video stream for VR applications. Depending on the type of applications, we might opt to use a different activity vocabulary.
+
+Nonetheless, it is important to note that none of the activity compendiums is perfect. Sometimes, we will need to develop a variant of our own. For example, if you are only interested in knowing roughly how active you are per week. Perhaps, you don't need to develop a model for hundreds of activity types. Three classes might be all you need: vigorous, moderate, and sedentary.  
+
+
+Most activity type definition needs careful design. There is one exception to the rule which is when we would like to detect a specific gesture signal in HCI. For example,  Apple Watch's battery doesn't last very long. Hence, the Watch tries to preserve the battery by having the screen dimed until when a specific up lift motion is detected. The lift detector is designed to capture the user's desire to look at the watch. This type of motion is rather unique and specific to the type of device. A general HAR model won't be able to capture this type of motion, hence, adding more complexity to the HAR model development.
+
 
 ## II. Hetergenous benchmark baselines
 In other popular domains in machine learning such as vision or language, there are many well-recognised benchmarks that everyone understands and uses such as CIFAR-10 and ImageNet. To be the `state-of-the-art` model, one will need to develop some new methods that out-performnce existings baselines on some dimensions. **Unforuatenly, in HAR, we don't have a well-recognised HAR benchmark that allows us to directly compare different model performances.**
@@ -95,7 +97,7 @@ The below is a list of images that were taken when I worn one of these cameras b
 
 
 
-## IV. Activity profile could differ based different characeterstics of different individuals such as weight/height/race/culture
+## IV. Diverse characteristics contribute to different activity profiles 
 For the same type of activity, we shall expect to a large differences in differnet groups of people. That aspect also contributes to te fact why an activity is hard to define. Even after defining what an activity is, we will have issues with the data. The vast diverse activity chaoractersitics often mean that the model trained is likey to overfit to the trianing set. When during prediction on a different population groups, we should expect to see a performance reduction because of the out-of-domain prediction. 
 
 There are a myriad of aspects might me exacerbsite this issue:
