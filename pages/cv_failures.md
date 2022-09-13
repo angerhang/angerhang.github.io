@@ -14,6 +14,7 @@ Inspired by the CV of failures project, I thought of doing something similar bot
 * 1 paper withdrawn from ICLR: 2021
 
 ### Fellowships & Scholarship
+* NVIDIA Academic Hardware Grant Program, 2022
 * Teaching and research scholarship, Oriel College: 2021
 * IBM PhD fellowship: 2020
 * Alan Turing fellowship: 2019

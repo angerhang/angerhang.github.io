@@ -10,7 +10,9 @@ My primary research interest lie into ML4Health. My doctoral research is supervi
 
 Previously I have worked with [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and [Benn Godde](https://www.researchgate.net/profile/Ben_Godde) on echo state neural networks for my undergraduate thesis. My master thesis were supervised by [François Fleuret](https://www.idiap.ch/~fleuret/) and [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
 
-PC Member for ML4Health 2020, 2021
+PC Member for [ML4Health](https://ml4health.github.io/2022/) 2020, 2021, 2022
+
+Reviewer for [JOSS](https://joss.theoj.org)
 
 ### Machine learning
 

@@ -12,9 +12,9 @@ Keywords: Human activity recognition, IMU, wearables, machine learning
 
 ## HAR intro
 
-Human activity recognition (HAR) is one of the most popular applications for wearable devices. HAR describes the class of methods that we use to identify human activities from time series signals using one or more data modalities such as images and accelerometers/Inertial measurement units(IMUs).
+Human activity recognition (HAR) is one of the most popular applications for wearable devices. HAR describes the class of methods that we use to identify human activities from time series signals using one or more data modalities such as images and accelerometers/Inertial measurement units (IMUs).
 
-Many devices that we use nowadays have lots of HAR applications. HAR is used in smartwatches to track fitness levels and sleep quality, VR devices for human-computer interaction and health applications for clinical monitoring. Despite the irresistible marketing slogans from the device manufacturers about how good their products are. HAR algorithms used nowadays suffer from numerous limitations.
+Many devices that we use nowadays have lots of HAR applications. HAR is used in smartwatches to track fitness levels and sleep quality, VR devices for human-computer interaction, and health applications for clinical monitoring. Despite the irresistible marketing slogans from the device manufacturers about how good their products are. HAR algorithms used nowadays suffer from numerous limitations.
 
 In fact, **we'd argue that HAR is far from being solved** because of the following reasons:
 
@@ -40,7 +40,7 @@ Regular walk            |  Irregular walk    | Edler Strolling |
 
 Source: GIPHY
 
-Depending on a person's age and the environment, we could see a perfect gait cycle in young adults, however, in older individuals, we might see a much more gradual and perhaps irregular gait cycle. The `duration`, `trajectory`, and `geometric `characteristics of even the same activity type can be vastly different, not even to mention other activities that require more complex body coordination. 
+Depending on a person's age and the environment, we could see a perfect gait cycle in young adults, however, in older individuals, we might see a much more gradual and perhaps irregular gait cycle. The `duration`, `trajectory`, and `geometric` characteristics of even the same activity type can be vastly different, not even to mention other activities that require more complex body coordination. 
 
 Well, some might suggest that instead of having an activity classed called "walk", let's have many "walk" types to account for the differences in how people. What a brilliant idea!  [The Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/home?authuser=0) is one of the major initiatives that aim to have a universal activity classification. The compendium is widely used in epidemiological studies. Whereas, more recently, [ego4d](https://ego4d-data.org) also proposed to do something similar by having over 200+ activity taxonomy to label its ego-centric video stream for VR applications. Depending on the type of applications, we might opt to use a different activity vocabulary.
 
@@ -51,19 +51,17 @@ Most activity type definition needs careful design. There is one exception to th
 
 
 ## II. Hetergenous benchmark baselines
-In other popular domains in machine learning such as vision or language, there are many well-recognised benchmarks that everyone understands and uses such as CIFAR-10 and ImageNet. To be the `state-of-the-art` model, one will need to develop some new methods that out-performnce existings baselines on some dimensions. **Unforuatenly, in HAR, we don't have a well-recognised HAR benchmark that allows us to directly compare different model performances.**
-
+**The benchmark datasets for HAR are so heterogeneous that as a field we don't know how to do an apple-to-apple comparison for different modeling techniques.** In popular machine learning conferences nowadays, there is a big emphasis on beating the `state-of-the-art` performance on existing benchmarks. In the field of computer vision, for example, one can evaluate their methods on [ImageNet](https://www.image-net.org) or [COCO](https://cocodataset.org/#home), if a paper proposes an algorithm that beats the current best model on these benchmark datasets, then that paper becomes the new `state-of-the-art`. How much a contribution a paper largely depends on the performance difference between the proposed algorithm and the existing best method. When a well-recognized benchmark exists, it is easy to do an apple-to-apple comparison between different methods. However, in HAR, we don't have a well-recognized benchmark yet, which makes it much harder to which method is better.
 
 
 <img src="/assets/images/baseline_har.png" alt="Source: Yuan et al. 2022 Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data " style="width: 90%; display:block; margin: 0 auto;"/>
 
+There have been many open-sourced HAR benchmarks for researchers to use (Table 1). However, none of the existing datasets became the gold standard to compare different algorithms. The reasons are multi-faceted: 
 
-The above shows a list of common benchmark datasets in HAR. Most datasets are small-scaled in nature with a very limited number of activity classes labelled. This is partly due to the difficulty in collecting labelled HAR dataset which will be cover in the next section. If you look closer to the performance that existings techniques have on those benchmarks, you will find that many methods already achieve almost a perfect score on those benchmarks. However, this doesn't mean that we have perfect HAR model at all. The reason being that 
-
-* Simple macro-actiivty classes instead of more fine-grainded labels
-* Lab envrionment datasets which is not representative of the free living envrionment 
-
-Anothe reason why it is very difficult to compare different models is that all the benchmarks have totally differnet evaluation characterstisc which make it not possible to apply one model and the evaluation protocol on all the datasets. The two main differences lie in the evaluation protocol and the window length people use to divide up a continuious time series to label for each activity label. 
+* **Most of the benchmarks are small**. For small datasets, cross-validation is better suited to provide a more robust estimation for the empirical risk as compared to the larger datasets, from which, a subset is held out as the test set. Having a common test set makes it easy to compare different methods at once. In most HAR research, however, people rely on their own way to partition the benchmark datasets, making it impossible to compare results from different papers directly.
+* **The limited sizes of the benchmarks also mean that the number of activity classes labelled is also limited.** It is often to see almost perfect performance on some of the smaller datasets but that doesn't mean the method used is perfect for HAR but that it is possible to achieve a perfect score when separating several activities in a small number of subjects.
+* We define an activity label over a fixed window length. However, **the current benchmarks have vastly different window length definitions in their evaluation, making it hard to even compare the model performance across different datasets.**
+* Lastly, **data collected in a lab environment doesn't truly reflect the model performance in the real world.** Admittedly, it is much easier to set up some mounted cameras in a lab so that we can label the data by looking at the video stream. However, there is a big gap between the types of activities and how people behave in a lab and real-living environment. So to fully appreciate the performance of HAR, we need to test our model on more datasets collected under free-living conditions.
 
 
 | Dataset     | #Samples | Evaluation method                                                      | Window length          | Evaluation metric |
@@ -78,7 +76,8 @@ Anothe reason why it is very difficult to compare different models is that all t
 
 
 
-The sampling frequency and data modality is also different. People end up spending lots of time in the data preprocessing stage. One question people often have is what's the ideal sampling frequency that one should use. From expereince, `30hz` is a good threshold between battery consumption without the loss of performance for IMUs. Since most of human activties have a frequency rate below `15hz`, it would be safe to run up to `30hz`. Some devices like to have a frequency of `100hz`+, we didn't really benefit from having that much more  data.
+As for the data-sampling variations shown above, from experience, it doesn't make a big difference for analysis. `30hz` is usually a good threshold between battery consumption without the loss of performance for IMUs. Since most human activities have a frequency rate below `15hz` (send us a reference if you have one!), it would be safe to run up to `30hz`. Some devices like to have a frequency of `100hz`+. We don't really benefit from having that much more data.
+
 
 ## III. Getting groud-truth data for HAR is both expensive and difficult
 One of the key reasons why existing benchmark datasets is small is that it is rather challenging to annotate ground truth for IMUs. To annotate HAR datasets, we will require concurrent ACC and video data. The difficulties are:
