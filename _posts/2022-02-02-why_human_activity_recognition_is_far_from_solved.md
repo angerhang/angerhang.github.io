@@ -42,7 +42,8 @@ Source: GIPHY
 
 Depending on a person's age and the environment, we could see a perfect gait cycle in young adults, however, in older individuals, we might see a much more gradual and perhaps irregular gait cycle. The `duration`, `trajectory`, and `geometric` characteristics of even the same activity type can be vastly different, not even to mention other activities that require more complex body coordination. 
 
-Well, some might suggest that instead of having an activity classed called "walk", let's have many "walk" types to account for the differences in how people. What a brilliant idea!  [The Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/home?authuser=0) is one of the major initiatives that aim to have a universal activity classification. The compendium is widely used in epidemiological studies. Whereas, more recently, [ego4d](https://ego4d-data.org) also proposed to do something similar by having over 200+ activity taxonomy to label its ego-centric video stream for VR applications. Depending on the type of applications, we might opt to use a different activity vocabulary.
+Well, some might suggest that instead of having an activity classed called "walk", let's have many "walk" types to account for the differences in how people. What a brilliant idea!  [The Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/home?authuser=0) (Ainsworth, et al., 2000)
+ is one of the major initiatives that aim to have a universal activity classification. The compendium is widely used in epidemiological studies. Whereas, more recently, [Ego4d](https://ego4d-data.org) (Grauman, et al., 2022) also proposed to do something similar by having over 200+ activity taxonomy to label its ego-centric video stream for VR applications. Depending on the type of applications, we might opt to use a different activity vocabulary.
 
 Nonetheless, it is important to note that none of the activity compendiums is perfect. Sometimes, we will need to develop a variant of our own. For example, if you are only interested in knowing roughly how active you are per week. Perhaps, you don't need to develop a model for hundreds of activity types. Three classes might be all you need: vigorous, moderate, and sedentary.  
 
@@ -129,7 +130,12 @@ In summary, the wearables field is a rapidly growing field as examplied by the r
 
 
 ## References 
-[1] [Yuan, H., Chan, S., Creagh, A. P., Tong, C., Clifton, D. A., & Doherty, A. (2022). Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data. arXiv preprint arXiv:2206.02909.
+[1] Ainsworth, B. E., Haskell, W. L., Whitt, M. C., Irwin, M. L., Swartz, A. M., Strath, S. J., ... & Leon, A. S. (2000). [Compendium of physical activities: an update of activity codes and MET intensities. Medicine and science in sports and exercise](https://www.researchgate.net/profile/Ann-Swartz-2/publication/12330586_Compendium_of_Physical_Activities_an_Update_of_Activity_Codes_and_MET_Intensities/links/0912f51407bee1e3a6000000/Compendium-of-Physical-Activities-an-Update-of-Activity-Codes-and-MET-Intensities.pdf), 32(9; SUPP/1), S498-S504.
+
+[2] Grauman, K., Westbury, A., Byrne, E., Chavis, Z., Furnari, A., Girdhar, R., ... & Malik, J. (2022). [Ego4d: Around the world in 3,000 hours of egocentric video. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition](https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html) (pp. 18995-19012).
+Chicago	
+
+[3] [Yuan, H., Chan, S., Creagh, A. P., Tong, C., Clifton, D. A., & Doherty, A. (2022). Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data. arXiv preprint arXiv:2206.02909.
 Chicago](https://arxiv.org/abs/2206.02909)
 
 
