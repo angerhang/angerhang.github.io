@@ -24,7 +24,7 @@ II. [Hetergenous benchmark baselines](#ii-hetergenous-benchmark-baselines)
 
 III. [Getting groud-truth data for HAR is both expensive and difficult](#iii-getting-groud-truth-data-for-har-is-both-expensive-and-difficult)
 
-IV. [Diverse characteristics contribute to different activity profiles](#iv-diverse-characteristics-contribute-to-different-activity-profiles)
+IV. [Diverse characteristics lead to different activity profiles](#iv-diverse-characteristics-lead-to-different-activity-profiles)
 
 V. [Lacking standardization in data storage, processing and analytics](#v-lacking-standarslization-in-data-storage-processing-and-analytics) 
 
@@ -95,42 +95,39 @@ Below is a list of images that were taken when I wore one of these cameras befor
 Capture-24 and ego4d decided to use very different approaches to annotate human activity from a video stream. Exactly how much signal is lost when doing the annotation with a lower sampling rate high depends on the sort of behaviour that we try to capture. We could also argue that activity variations over too short a time, for example, <1s or <5s, just shouldn't represent a separate behaviour because humans don't really shift behaviour that quickly. How quickly behaviour changes is also population specific.  Activity transitions are likely to happen more quickly for kids than adults.
 
 
-
-
 <img src="/assets/images/sample_view.png" alt="Egocentric view"  style="width: 80%; display:block; margin: 0 auto;"/>
 
 
+## IV. Diverse characteristics lead to different activity profiles 
+For the same type of activity, we shall expect to see large variations across populations. These activity variations are problematic because 1. We might have to adopt the activity definition to fit different groups of people 2. Diverse activity characteristics will reduce the generalizability of the trained models due to the data distribution gap between data from different groups of people.
 
-
-
-## IV. Diverse characteristics contribute to different activity profiles 
-For the same type of activity, we shall expect to a large differences in differnet groups of people. That aspect also contributes to te fact why an activity is hard to define. Even after defining what an activity is, we will have issues with the data. The vast diverse activity chaoractersitics often mean that the model trained is likey to overfit to the trianing set. When during prediction on a different population groups, we should expect to see a performance reduction because of the out-of-domain prediction. 
-
-There are a myriad of aspects might me exacerbsite this issue:
+Many aspects contribute to the data heterogeneity. Some key factors are listed below:
 * Age
 * Weight
 * Height
-* Culture
-* Wrist length
-Are some of the key axes that make HAR harder than it always is.
+* Arm length
+* Occupation 
+* Education 
+* Income level
+* Nationality
 
 
-The easist solution is really to have more data in your model development, which we sadly don't, especially for labelled data. The alternative is to use better methods that can make use of unlabelled data which we have plenty of. Relevant works includes using transfer learning to to personalise the prediction trained on a large pool of subjects to a specific subject for which we just have very limited data for (Add ref). Or we can use self-supervised-learning to learn useful embedding from unlabelled data such that the eventual model simply only needs much smaller labelled dataset. (to add ref)
+The easiest solution is really to collect more data, which we sadly don't have most of the time, especially for labelled data. The alternative is to use methods that can make use of unlabelled data which is much easier to get hold of. Relevant works include using transfer learning to personalise the prediction trained on a large pool of subjects to a specific subject for which we just have very limited data.  Self-supervised-learning can also be used to learn useful embedding from unlabelled data such that the eventual model simply only needs to be fine-tuned on a much smaller labelled dataset. ([Tang et al., 2021](https://arxiv.org/abs/2102.06073), [Haresamudram et al., 2022](https://arxiv.org/abs/2202.12938), [Yuan et al., 2022](https://arxiv.org/abs/2206.02909)).
 
 
 
-## V. Lacking standarslization in data storage, processing and analytics
-The last aspect which makes HAR so challenging is because in the wearabels domain, this is still an early stage. Every single vendo is like a tiger trying to get as much market share as possible utilising their propertiery solutions which means we have bespoke data storage format, processing tools, and eventually analtics. As compared to a more standard image modality such as images, we have format such as JPG and PNG which every signle hardware and sofware will support making it much easier for the industry to move forward. It will also make the study outcomes from different devices more comparable. 
+## V. Lacking standardization in data storage, processing and analytics
+Last but not least, **HAR is hard not just because solving the problem itself is hard but also because wearable tech is still in an early stage so there is a lack of standardization in data storage, processing and analytics.**  For both the research-grade and consumer-grade smartwatches, because of the lack of standardization, each vendor is using its own bespoke data storage format that's best suited for its own device. There are times when diversity is good, but what different data formats bring is even more differences in data processing and analytics pipelines. Despite the fact that they might try to capture the same data modality, we are still entirely sure whether the data collected and processed by different devices are comparable. Therefore,  many validation studies have been done just to know how to explain the device difference and how the device differences might contribute to contradicting conclusions in research studies ([Tully et al., 2014](https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-7-952), [Miller et al., 2022](https://www.mdpi.com/1424-8220/22/16/6317)).
 
-Whilst it is understandable that no one has the motivation to make a standardlised format for everyone to use because each would like to have their own thing. But as the field we will be saving a lot by introducint these standards. In order to do this, however, would require buy in from all sides, the industries, reserach labs and the devices users to design the best all-purpose future-proof soltuions that everyone can benefit from. Althought there has been some effrot some the industry, the field is still not picking it up yet (cite the meta data format).
 
-* Standardlisation
-    * Add some open source data storage format that Meta shared 
+Whilst it is understandable that it might not be easy to make a standardised format for everyone to use because each device manufacturer might have different data format requirements. However, as a field, we will be saving a lot by introducing these standards. Having a universal standard would require buy-in from all state-holders, commercial companies, research labs and end-users to agree and design the best all-purpose future-proof solutions that everyone can benefit from. Although there has been some effort being made in the industry such as the project [Aria](https://facebookresearch.github.io/Aria_data_tools/) developed by Meta, the field has not picked up momentum just yet.
 
 
 
 # Future direction
-In summary, the wearables field is a rapidly growing field as examplied by the recenet lauches of Apple Watch ultra which even incoporates temprature into daily consumer product. Maybe by incoporating more data modality is something that will greatly  enhance the applicability of wearables for HAR especially.  There are still a lot of work to be done around just just the hardware itself anymore but moving towards a more unifying field of data, analytics and inferences which could eventually translate into helping the device users have a better quality of life. We'd like to close this post with the figure below. It seems that there are still a lots of innotivation happening on the sensors and hardware side of things to make these sensors more accurate and more portable. We are at the stage where we shall gradually start to understand and standarlise the way that we do things so that the downstream applicaitons can be properly implemented (TODO: add a figure about the development of wearable tech compare vision with wearable tech)
+In summary, the wearables field is rapidly growing as exemplified by the recent launches of the Apple Watch ultra which even incorporates a temperature sensor into its design. Maybe more data modality will enhance the applicability of wearables for HAR in the future. There is still a lot of work to be done around just the hardware itself before we can move towards a more unifying standardisation of data storage and analytics. 
+
+We'd like to close this post with the figure below. (TODO: add a figure about the development of wearable tech comparing vision with wearable tech)
 
 
 
@@ -141,10 +138,19 @@ In summary, the wearables field is a rapidly growing field as examplied by the r
 [2] Grauman, K., Westbury, A., Byrne, E., Chavis, Z., Furnari, A., Girdhar, R., ... & Malik, J. (2022). [Ego4d: Around the world in 3,000 hours of egocentric video. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition](https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html) (pp. 18995-19012).
 	
 
-[3] [Yuan, H., Chan, S., Creagh, A. P., Tong, C., Clifton, D. A., & Doherty, A. (2022). Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data](https://arxiv.org/abs/2206.02909). arXiv preprint arXiv:2206.02909.
+[3] Yuan, H., Chan, S., Creagh, A. P., Tong, C., Clifton, D. A., & Doherty, A. (2022). [Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data](https://arxiv.org/abs/2206.02909). arXiv preprint arXiv:2206.02909.
 
 [4]Walmsley, R., Chan, S., Smith-Byrne, K., Ramakrishnan, R., Woodward, M., Rahimi, K., ... & Doherty, A. (2022). [Reallocation of time between device-measured movement behaviours and risk of incident cardiovascular disease](https://bjsm.bmj.com/content/56/18/1008.abstract). British journal of sports medicine, 56(18), 1008-1017.
 	
 
 [5] Small, S., Khalid, S., Dhiman, P., Chan, S., Jackson, D., Doherty, A., & Price, A. (2021). [Impact of reduced sampling rate on accelerometer-based physical activity monitoring and machine learning activity classification](https://journals.humankinetics.com/view/journals/jmpb/4/4/article-p298.xml). Journal for the Measurement of Physical Behaviour, 4(4), 298-310.
 Chicago	
+
+[6] Tang, C. I., Perez-Pozuelo, I., Spathis, D., Brage, S., Wareham, N., & Mascolo, C. (2021). [Selfhar: Improving human activity recognition through self-training with unlabeled data](https://arxiv.org/abs/2102.06073). arXiv preprint arXiv:2102.06073.
+
+[7] Haresamudram, H., Essa, I., & Plötz, T. (2022). [Assessing the State of Self-Supervised Human Activity Recognition using Wearables](https://arxiv.org/abs/2202.12938). arXiv preprint arXiv:2202.12938.
+
+[8] Miller, D. J., Sargent, C., & Roach, G. D. (2022). [A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults](https://www.mdpi.com/1424-8220/22/16/6317) Sensors, 22(16), 6317.
+Chicago	
+
+[9] Tully, M. A., McBride, C., Heron, L., & Hunter, R. F. (2014). [The validation of Fitbit Zip™ physical activity monitor as a measure of free-living physical activity](https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-7-952) BMC research notes, 7(1), 1-5.
