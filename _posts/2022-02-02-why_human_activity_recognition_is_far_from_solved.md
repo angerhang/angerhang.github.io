@@ -53,7 +53,7 @@ Another reason why HAR can be challenging is that we need an evolving activity d
 
 
 ## II. Hetergenous benchmark baselines
-**The benchmark datasets for HAR are so heterogeneous that as a field we don't know how to do an apple-to-apple comparison for different modelling techniques.** In popular machine learning conferences nowadays, there is a big emphasis on beating the `state-of-the-art` performance on existing benchmarks. In the field of computer vision, for example, one can evaluate their methods on [ImageNet](https://www.image-net.org) or [COCO](https://cocodataset.org/#home), if a paper proposes an algorithm that beats the current best model on these benchmark datasets, then that paper becomes the new `state-of-the-art`. How much a contribution a paper largely depends on the performance difference between the proposed algorithm and the existing best method. When a well-recognized benchmark exists, it is easy to do an apple-to-apple comparison between different methods. However, in HAR, we don't have a well-recognized benchmark yet, which makes it much harder to which method is better.
+**The benchmark datasets for HAR are so heterogeneous that as a field we don't know how to do an apple-to-apple comparison for different modelling techniques.** In popular machine learning conferences nowadays, there is a big emphasis on beating the *state-of-the-art* performance on existing benchmarks. In the field of computer vision, for example, one can evaluate their methods on [ImageNet](https://www.image-net.org) or [COCO](https://cocodataset.org/#home), if a paper proposes an algorithm that beats the current best model on these benchmark datasets, then that paper becomes the new *state-of-the-art*. How much a contribution a paper largely depends on the performance difference between the proposed algorithm and the existing best method. When a well-recognized benchmark exists, it is easy to do an apple-to-apple comparison between different methods. However, in HAR, we don't have a well-recognized benchmark yet, which makes it much harder to which method is better.
 
 
 <img src="/assets/images/baseline_har.png" alt="Source: Yuan et al. 2022 Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data " style="width: 90%; display:block; margin: 0 auto;"/>
@@ -129,7 +129,7 @@ In summary, the wearables field is rapidly growing as exemplified by the recent 
 
 We'd like to close this post with the figure below. (TODO: add a figure about the development of wearable tech comparing vision with wearable tech)
 
-
+<img src="/assets/images/history.png" alt="History timeline"  style="width: 120%; display:block; margin: 0 auto;"/>
 
 
 ## References 
