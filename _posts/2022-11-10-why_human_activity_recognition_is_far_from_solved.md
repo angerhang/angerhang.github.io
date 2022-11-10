@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Human Activity Recognition Using Wearables Is Far From Being Solved  
-date: 2022-08-02
+date: 2022-11-10
 comments: true
 usemathjax: true
 ---
