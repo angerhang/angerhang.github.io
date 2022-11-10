@@ -63,7 +63,7 @@ Finally, something might be fundamentally wrong with how we treat an activity cl
 There have been many open-source HAR benchmarks for researchers to use (Table 1). However, no existing dataset has become the gold standard for comparing different algorithms. The reasons are multi-faceted: 
 
 * **Most of the benchmarks are small**. For small datasets, cross-validation is better suited to provide a more robust estimation of the empirical risk as compared to the larger datasets. For evaluation on a larger dataset, usually, a subset is held out as the test set instead. Having a common test set makes it easy to compare different methods. In most HAR research, however, people rely on their own way of data partitioning, making it impossible to compare results from different papers directly.
-* **The limited sizes of the benchmarks also mean that the number of activity classes labelled is also limited.** Often, we will see almost perfect performance on some of the smaller datasets, but that doesn't mean the method used is perfect for HAR. Especially, for small lab-based benchmarks, only a few activity classes are included, thus it is easier to obtain a great pereformance.
+* **The limited sizes of the benchmarks also mean that the number of activity classes labelled is also limited.** Often, we will see almost perfect performance on some of the smaller datasets, but that doesn't mean the method used is perfect for HAR. Especially, for small lab-based benchmarks, only a few activity classes are included, thus it is easier to obtain a great performance.
 * We define an activity label over a fixed window length. However, **the current benchmarks have vastly different window length definitions in their evaluation, making it hard to even compare the model performance across different datasets.**
 * Lastly, **data collected in a lab environment doesn't truly reflect the model performance in the real world.** Admittedly, it is much easier to set up some mounted cameras in a lab so that we can label the data by looking at the video stream. However, people will likely behave differently in a lab and free-living environment. So to fully appreciate the performance of HAR, we need to test our model on more datasets collected under free-living conditions.
 
@@ -127,7 +127,7 @@ Understandably, it might not be easy to make a standardised format for everyone 
 
 
 # Conclusion
-In summary, the wearables field is rapidly growing, as exemplified by the recent launche of the Apple Watch ultra, which even incorporates a temperature sensor into its design. Maybe more data modality will enhance the applicability of wearables for HAR in the future. There is still a lot of work to be done around the hardware before we can move towards a more unifying data storage and analytics standardisation. Equally importantly, we need to develop novel methods to understand the buried information and then potentially translate the information into more actionable insights.
+In summary, the wearables field is rapidly growing, as exemplified by the recent launch of the Apple Watch ultra, which even incorporates a temperature sensor into its design. Maybe more data modality will enhance the applicability of wearables for HAR in the future. There is still a lot of work to be done around the hardware before we can move towards a more unifying data storage and analytics standardisation. Equally importantly, we need to develop novel methods to understand the buried information and then potentially translate the information into more actionable insights.
 
 
 
