@@ -70,7 +70,7 @@ There have been many open-source HAR benchmarks for researchers to use (Table 1)
 
 | Dataset     | #Samples | Evaluation method                                                      | Window length          | Evaluation metric |
 |-------------|----------|------------------------------------------------------------------------|------------------------|-------------------|
-| Capture24   | 573K     | Held-one-subject_out                                                   | 30 sec                 | F-measure/Kappa   |
+| Capture24   | 910K     | Held-one-subject_out                                                   | 30 sec                 | F-measure/Kappa   |
 | Rowlands    | 36K      | Tested proprietary algorithms with all subjects being in one test set. | 1 min                  | ROC               |
 | WISDM       | 28K      | 10-fold CV                                                             | 5 sec/10 sec           | Accuracy          |
 | REALWORLD   | 12K      | 10-Fold CV                                                             | 1 sec                  | F-measure         |
