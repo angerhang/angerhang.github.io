@@ -5,7 +5,7 @@ date: 2022-11-10
 comments: true
 usemathjax: true
 ---
-Authors: [Rosemary Walmsley](https://www.bdi.ox.ac.uk/Team/rosemary-walmsley-1) &  [Shing Chan](https://scholar.google.co.uk/citations?user=-FqhzRcAAAAJ&hl=en) & Hang Yuan
+Authors: Hang Yuan & [Rosemary Walmsley](https://www.bdi.ox.ac.uk/Team/rosemary-walmsley-1) &  [Shing Chan](https://scholar.google.co.uk/citations?user=-FqhzRcAAAAJ&hl=en)
 
 Keywords: Human activity recognition, IMU, wearables, machine learning
 
@@ -14,13 +14,13 @@ Keywords: Human activity recognition, IMU, wearables, machine learning
 
 Human activity recognition (HAR) is a popular application for wearable devices. HAR describes the techniques that classify human activities from time series. In HAR applications, we often use data from several modalities, such as images and accelerometers/Inertial measurement units (IMUs). This post will focus on the issues related to the most common data modality, the IMUs.
 
-There are many examples of HAR applications in our daily lives: fitness and sleep quality tracking in smartwatches, human-computer interaction support in VR devices, and patient monitoring in clinical applications. On the surface, we might have the false perception that activity recognition from IMUs is already perfect and that nothing further needs to be done. Contrary to popular belief, among those who stopped using their wearable devices: 36% blamed it on the perceived measurement in accuracy and 34% blamed it on the incorrect activity tracking ([Attig, C., & Franke, T. 2020](https://www.sciencedirect.com/science/article/pii/S0747563219303127)). In fact, **we'd argue that HAR is far from being solved** because of the following reasons:
+There are many examples of HAR applications in our daily lives: fitness and sleep quality tracking in smartwatches, human-computer interaction support in VR devices, and patient monitoring in clinical applications. On the surface, we might have the false perception that activity recognition from IMUs is already perfect and that nothing further needs to be done. Contrary to popular belief, among those who stopped using their wearable devices: 36% cited the perceived measurement in accuracy and 34% cited the incorrect activity tracking ([Attig, C., & Franke, T. 2020](https://www.sciencedirect.com/science/article/pii/S0747563219303127)). In fact, **we'd argue that HAR is far from being solved** because of the following reasons:
 
 I. [Difficult to define what is an activity](#i-hard-to-define-what-is-an-activity)
 
-II. [Hetergenous benchmark baselines](#ii-hetergenous-benchmark-baselines)
+II. [Heterogeneous benchmark baselines](#ii-heterogeneous-benchmark-baselines)
 
-III. [Getting groud-truth data for HAR is both expensive and difficult](#iii-getting-groud-truth-data-for-har-is-both-expensive-and-difficult)
+III. [Getting ground-truth data for HAR is both expensive and difficult](#iii-getting-ground-truth-data-for-har-is-both-expensive-and-difficult)
 
 IV. [Diverse characteristics lead to different activity profiles](#iv-diverse-characteristics-lead-to-different-activity-profiles)
 
@@ -48,13 +48,13 @@ Nonetheless, it is important to note that none of the activity compendiums is pe
 
 Another reason why HAR can be challenging is that we need an evolving activity definition to account for everything that we want to capture.  As new hardware surfaces, we need to have novel gesture recognition to improve the human-computer interaction (HCI) process. For example, Apple Watch's battery doesn't last very long, so the Watch tries to preserve the battery by keeping the screen dim until a specific uplift motion is detected. The lift detector is designed to capture when the user looks at the watch. This motion is unique and specific to the type of device. A general HAR model won't be able to capture this type of motion, hence, adding more complexity to the HAR model development.
 
-Finally, something might be fundamentally wrong with how we treat an activity class. The current state-of-the-art HAR models often assign one activity class to a fixed-length window, e.g. 10 seconds. In a three-class classification where we try to discriminate between ``walk``, ``run`` and ``sleep``,  the model receives the same penalty in training regardless of whether the model misclassifies ``walk`` as ``sleep`` or ``run``. The main reason for the undifferentiated penalty is that the model assumes that all the classes have an equal distance in the label space (Figure 2 left). The commonly used one-hot encoding label format exemplifies the equal-distance assumption. To mimic the true-distance label distribution (Figure 2 right), the model should receive a greater penalty if a ``walk`` sample is mistaken as ``sleep`` than ``run``. Many studies have tried to convert the discrete input format into a continuous representation that reflects the data similarities as seen in language learning. However, much less work has been done in the representation learning of the label space for HAR. To help resolve this issue, when annotating the data, we shouldn't only just assign a window with one label. For ambiguous cases especially, we might benefit from noting down all the possible labels for a window. Then, we could employ techniques such as [soft label learning](https://ojs.aaai.org/index.php/HCOMP/article/view/21986) to enhance our model performance. 
+Finally, something might be fundamentally wrong with how we treat an activity class. The current state-of-the-art HAR models often assign one activity class to a fixed-length window, e.g. 10 seconds. In a three-class classification where we try to discriminate between ``walk``, ``run`` and ``sleep``,  the model receives the same penalty in training regardless of whether the model misclassifies ``walk`` as ``sleep`` or ``run``. The main reason for the undifferentiated penalty is that the model assumes that all the classes have an equal distance in the label space (Figure 2 left). The commonly used one-hot encoding label format exemplifies the equal-distance assumption. To mimic the true-distance label distribution (Figure 2 right), the model should receive a greater penalty if a ``walk`` sample is mistaken as ``sleep`` than ``run``. Many studies have tried to convert the discrete input format into a continuous representation that reflects the data similarities as seen in language learning like word2vector. However, much less work has been done in the representation learning of the label space for HAR. To help resolve this issue, when annotating the data, we shouldn't only just assign a window with one label. For ambiguous cases especially, we might benefit from noting down all the possible labels for a window. Then, we could employ techniques such as [soft label learning](https://ojs.aaai.org/index.php/HCOMP/article/view/21986) to enhance our model performance. 
 
 <img src="/assets/images/act.png" alt="Figure 2: Equal distance label space vs true distance labe space"  style="width: 100%; display:block; margin: 0 auto;"/>
 
 
 
-## II. Hetergenous benchmark baselines
+## II. Heterogeneous benchmark baselines
 **The benchmark datasets for HAR are so heterogeneous that as a field, we don't know how to make an apple-to-apple comparison for different modelling techniques.** In popular machine learning conferences nowadays, there is a big emphasis on beating the *state-of-the-art* performance on existing benchmarks. In the field of computer vision, for example, one can evaluate a new method on [ImageNet](https://www.image-net.org) or [COCO](https://cocodataset.org/#home); if a paper proposes an algorithm that beats the current best model on these benchmark datasets, then that paper becomes the new *state-of-the-art*. How much a contribution a paper largely depends on the performance difference between the proposed algorithm and the existing best method. When a well-recognized benchmark exists, it is easy to make an apple-to-apple comparison between different methods. However, in HAR, we don't have a well-recognized benchmark yet, which makes it much harder to identify the method with the best performance.
 
 
@@ -80,10 +80,10 @@ There have been many open-source HAR benchmarks for researchers to use (Table 1)
 
 
 
-As for the data-sampling variations shown above, from experience, it doesn't make a big difference for analysis with deep learning models. `30 Hz` is usually a good threshold between battery consumption without the loss of performance for IMUs. Since most human activities have a frequency rate below `15 Hz` (send us a reference if you have one!), it would be safe to run up to `30 Hz`. Some devices like to have a frequency of `100 Hz`+. We don't really benefit from having that much more data in theory. However, if you are using statistical learning methods, some differences in the derived measurements exist if you compare data collected using `25 Hz` and `100 Hz` as suggested by [Small, et al., 2021](https://journals.humankinetics.com/view/journals/jmpb/4/4/article-p298.xml). In this case, choose your sampling methods carefully.
+As for the data-sampling variations shown above, from experience, it doesn't make a big difference for analysis with deep learning models. `30 Hz` is usually a good threshold between battery consumption without the loss of performance for IMUs. Since most human activities have a frequency rate below `15 Hz` (send us a reference if you have one!), it would be safe to with frequencies of `30 Hz` or above. Some devices like to have a frequency of `100 Hz`+. We don't really benefit from having that much more data in theory. However, if you are using statistical learning methods, some differences in the derived measurements exist if you compare data collected using `25 Hz` and `100 Hz` as suggested by [Small, et al., 2021](https://journals.humankinetics.com/view/journals/jmpb/4/4/article-p298.xml). In this case, choose your sampling methods carefully.
 
 
-## III. Getting groud-truth data for HAR is both expensive and difficult
+## III. Getting ground-truth data for HAR is both expensive and difficult
 One of the key reasons why existing benchmark datasets is small is that it is challenging to annotate ground truth for IMUs. To annotate HAR datasets, we will require concurrent ACC and video data. The difficulties are:
 * We sync the timestamps on both the wearable and video recording devices, for which the timestamps might not be in perfect synchrony.
 * It might be easy to obtain a video stream of human activity in a lab environment. However, data collected in a lab doesn't reflect the data distribution in a free-living environment. However, getting the concurrent video stream in a free-living environment is much harder because we would require the participants to wear an ego-centric camera or install many cameras in the participants' living environments. Neither of these is ideal, and both cause privacy concerns.
@@ -101,9 +101,9 @@ Capture-24 and ego4d used different approaches to annotate human activity. The k
 
 
 ## IV. Diverse characteristics lead to different activity profiles 
-For the same type of activity, we shall expect to see large variations across populations. These activity variations are problematic because 1. We might have to adopt the activity definition to fit different groups of people 2. Diverse activity characteristics will reduce the generalizability of the trained models due to the data distribution gap between data from different groups of people.
+For the same type of activity, we shall expect to see large variations across populations. These activity variations are problematic because the model trained on a young healthy population is going to perform worse on an older population for example. 
 
-Many aspects contribute to the data heterogeneity. Some key factors are listed below:
+Many aspects contribute to the variations we see in different population profiles:
 * Age
 * Weight
 * Height
