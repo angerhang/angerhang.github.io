@@ -80,7 +80,7 @@ There have been many open-source HAR benchmarks for researchers to use (Table 1)
 
 
 
-As for the data-sampling variations shown above, from experience, it doesn't make a big difference for analysis with deep learning models. `30 Hz` is usually a good threshold between battery consumption without the loss of performance for IMUs. Since most human activities have a frequency rate below `15 Hz` (send us a reference if you have one!), it would be safe to with frequencies of `30 Hz` or above. Some devices like to have a frequency of `100 Hz`+. We don't really benefit from having that much more data in theory. However, if you are using statistical learning methods, some differences in the derived measurements exist if you compare data collected using `25 Hz` and `100 Hz` as suggested by [Small, et al., 2021](https://journals.humankinetics.com/view/journals/jmpb/4/4/article-p298.xml). In this case, choose your sampling methods carefully.
+As for the data-sampling variations shown above, from experience, it doesn't make a big difference for analysis with deep learning models. `30 Hz` is usually a good threshold between battery consumption without the loss of performance for IMUs. Since most of the frequency content in human motion falls below `15 Hz` (send us a reference if you have one!), going below `30 Hz` will risk losing information useful for classification as suggested by [Small, et al., 2021](https://journals.humankinetics.com/view/journals/jmpb/4/4/article-p298.xml). 
 
 
 ## III. Getting ground-truth data for HAR is both expensive and difficult
