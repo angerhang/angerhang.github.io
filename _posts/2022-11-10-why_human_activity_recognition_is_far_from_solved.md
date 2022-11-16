@@ -127,7 +127,9 @@ Understandably, it might not be easy to make a standardised format for everyone 
 
 
 # Conclusion
-In summary, the wearables field is rapidly growing, as exemplified by the recent launch of the Apple Watch ultra, which even incorporates a temperature sensor into its design. Maybe more data modality will enhance the applicability of wearables for HAR in the future. There is still a lot of work to be done around the hardware before we can move towards a more unifying data storage and analytics standardisation. Equally importantly, we need to develop novel methods to understand the buried information and then potentially translate the information into more actionable insights.
+In summary, the wearables field is rapidly growing, as exemplified by the recent launch of the Apple Watch ultra, which even incorporates a temperature sensor into its design. Maybe more data modality will enhance the applicability of wearables for HAR in the future. With the additional data modality, we can better capture the activities where movement is not the best indicator of activity intensity. For example, when using IMUs to classify weight lifting or construction work, the wrist movement will be slow, without concurrent physiological data, it will be hard to separate strenuous work from other light activities. 
+
+There is still a lot of work to be done around the hardware before we can move towards a more unifying data storage and analytics standardisation. Equally importantly, we need to develop novel methods to understand the buried information and then potentially translate the information into more actionable insights.
 
 
 
