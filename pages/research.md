@@ -7,7 +7,7 @@ cover_name: The World of Science
 image: /assets/images/research_cover.jpg
 ---
 
-My primary research interests lie in ML4Health. My doctoral research is supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by the Li Kai Shing foundation and Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
+My primary research interests lie in ML4Health. My doctoral research is supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by the Li Kai Shing Foundation and Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
 Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and [Benn Godde](https://www.researchgate.net/profile/Ben_Godde) on echo state neural networks for my undergraduate thesis. My master thesis was supervised by [François Fleuret](https://www.idiap.ch/~fleuret/) and [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
 
 ### Academic service
@@ -18,7 +18,7 @@ Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herb
 
 
 ### Selected publications
-**Digital health technologies and machine learning augment patient reported outcomes to remotely characterise rheumatoid arthritis**
+**Digital health technologies and machine **learning augment patient-reported outcomes to** remotely characterise rheumatoid arthritis**
 <br/>
 Andrew P. Creagh, Valentin Hamy, *Hang Yuan*, Gert Mertes, Ryan Tomlinson, Wen-Hung Chen, Rachel Williams, Christopher Llop, Christopher Yee, Mei Sheng Duh, Aiden Doherty, Luis Garcia-Gancedo, David A. Clifton
  <br/> *medRxiv, 2022* <br/> 
