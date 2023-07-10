@@ -18,7 +18,14 @@ Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herb
 
 
 ### Selected publications
-**Digital health technologies and machine **learning augment patient-reported outcomes to** remotely characterise rheumatoid arthritis**
+**Self-supervised learning of accelerometer data provides new insights for sleep and its association with mortality**
+<br/>
+*Hang Yuan*, Tatiana Plekhanova, Rosemary Walmsley, Amy C. Reynolds, Kathleen J. Maddison, Maja Bucan, Philip Gehrman, Alex Rowlands, David W. Ray, Derrick Bennett, Joanne McVeigh, Leon Straker, Peter Eastwood, Simon D. Kyle, Aiden Doherty
+ <br/> *medRxiv, 2023* <br/> 
+ <sub><sup> [Paper](https://www.medrxiv.org/content/10.1101/2023.07.07.23292251v1.article-info)  &nbsp;  [Code](https://github.com/OxWearables/asleep)  &nbsp; [Web](https://oxwearables.github.io/asleep/) </sup></sub>
+
+
+**Digital health technologies and machine **learning augment patient-reported outcomes to remotely characterise rheumatoid arthritis**
 <br/>
 Andrew P. Creagh, Valentin Hamy, *Hang Yuan*, Gert Mertes, Ryan Tomlinson, Wen-Hung Chen, Rachel Williams, Christopher Llop, Christopher Yee, Mei Sheng Duh, Aiden Doherty, Luis Garcia-Gancedo, David A. Clifton
  <br/> *medRxiv, 2022* <br/> 
