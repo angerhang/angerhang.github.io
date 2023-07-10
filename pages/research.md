@@ -25,7 +25,7 @@ Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herb
  <sub><sup> [Paper](https://www.medrxiv.org/content/10.1101/2023.07.07.23292251v1)  &nbsp;  [Code](https://github.com/OxWearables/asleep)  &nbsp; [Web](https://oxwearables.github.io/asleep/) </sup></sub>
 
 
-**Digital health technologies and machine **learning augment patient-reported outcomes to remotely characterise rheumatoid arthritis**
+**Digital health technologies and machine learning augment patient-reported outcomes to remotely characterise rheumatoid arthritis**
 <br/>
 Andrew P. Creagh, Valentin Hamy, *Hang Yuan*, Gert Mertes, Ryan Tomlinson, Wen-Hung Chen, Rachel Williams, Christopher Llop, Christopher Yee, Mei Sheng Duh, Aiden Doherty, Luis Garcia-Gancedo, David A. Clifton
  <br/> *medRxiv, 2022* <br/> 
