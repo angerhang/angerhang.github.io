@@ -7,7 +7,7 @@ cover_name: The World of Science
 image: /assets/images/research_cover.jpg
 ---
 
-My primary research interest is to understand how can wearables improve human health. Wearable devices can provide *longitudinal 
+I am an NDPH Early Career Research Fellow at the Nuffield Department of Population Health at Oxford. My primary research interest is to understand how can wearables improve human health. Wearable devices can provide *longitudinal 
 passive monitoring* of human behavior and physiology. Few other technologies can match wearable data in its length at the same 
 level of temporal granularity. As the measurement tools improve and longer data become available, we are blessed with this gold mine that contains a huge amount of under-exploited data which could *transform our understanding of human physiology and improve human health*.  
 
