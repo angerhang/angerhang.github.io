@@ -20,6 +20,7 @@ name: 'Hang Yuan'
 author: 'Hang Yuan'
 author_image: "/assets/images/author.jpg"
 markdown: kramdown
+mathjax: true
 
 paginate:	5
 
