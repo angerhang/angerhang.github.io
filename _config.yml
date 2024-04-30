@@ -30,8 +30,6 @@ baseurl: ""
 #used to display twitter cards
 twitter_handle: '@angerhang'
 
-#fill in disqus shortname to use disqus
-disqus: angerhang
 
 google_analytics: G-3B69Y478BF
 
