@@ -20,6 +20,7 @@ name: 'Hang Yuan'
 author: 'Hang Yuan'
 author_image: "/assets/images/author.jpg"
 markdown: kramdown
+mathjax: true
 
 paginate:	5
 
@@ -29,8 +30,6 @@ baseurl: ""
 #used to display twitter cards
 twitter_handle: '@angerhang'
 
-#fill in disqus shortname to use disqus
-disqus: angerhang
 
 google_analytics: G-3B69Y478BF
 
