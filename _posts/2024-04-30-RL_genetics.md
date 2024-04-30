@@ -199,6 +199,8 @@ Unlike previous studies for which the embeddings were directly used as the input
 
 It's not easy to read through the related work in representation learning for genomic discovery because the existing works have used different modalities, evaluation metrics and machine learning methods (Table 2). What's clear though is that by using embeddings, it will be possible to move away from labeled datasets, have less dependency on expert-curated features and identify novel loci that might not be discovered using conventional techniques. 
 
+Also on a side note, I was amazed that the majority of the papers covered used data from the UK Biobank. Even though I work on the UK Biobank on a daily basis and so does everyone around me, it is incredible to see what people can do with rich resources like the UK Biobank on perhaps non-mainstream projects.
+
 
 #### Table 2. Characteristics of phenotype representation learning
 
