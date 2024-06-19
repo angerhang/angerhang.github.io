@@ -20,7 +20,6 @@ Main research interests:
  My doctoral research is supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by the Li Kai Shing Foundation and Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
 Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and [Benn Godde](https://www.researchgate.net/profile/Ben_Godde) on echo state neural networks for my undergraduate thesis. My master's thesis was supervised by [François Fleuret](https://www.idiap.ch/~fleuret/) and [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
 
-Academic services: PC member and reviewer for Neurips ML4H, Timeseries4H Workshops, AAAI workshops, Nature Communications and Journal of Open Source Software.
 
 <!-- ### Academic service
 * PC Member for Neurips ML4Health 2020, 2021, 2022.
@@ -30,24 +29,26 @@ Academic services: PC member and reviewer for Neurips ML4H, Timeseries4H Worksho
 
 
 ### Selected publications
+**Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data**
+<br/> *Hang Yuan*, Shing Chan, Andrew P. Creagh, Catherine Tong, David A. Clifton, Aiden Doherty
+ <br/> *npj Digital Medicine, 2024* <br/> 
+ <sub><sup> [Paper](https://arxiv.org/abs/2206.02909)  &nbsp;  [Code](https://github.com/OxWearables/ssl-wearables)  &nbsp; [Web](https://oxwearables.github.io/ssl-wearables/) </sup></sub>
+
+
 **Self-supervised learning of accelerometer data provides new insights for sleep and its association with mortality**
 <br/>
 *Hang Yuan*, Tatiana Plekhanova, Rosemary Walmsley, Amy C. Reynolds, Kathleen J. Maddison, Maja Bucan, Philip Gehrman, Alex Rowlands, David W. Ray, Derrick Bennett, Joanne McVeigh, Leon Straker, Peter Eastwood, Simon D. Kyle, Aiden Doherty
- <br/> *medRxiv, 2023* <br/> 
+ <br/> *npj Digitial Medicine, 2024* <br/> 
  <sub><sup> [Paper](https://www.medrxiv.org/content/10.1101/2023.07.07.23292251v1)  &nbsp;  [Code](https://github.com/OxWearables/asleep)  &nbsp; [Web](https://oxwearables.github.io/asleep/) </sup></sub>
 
 
 **Digital health technologies and machine learning augment patient-reported outcomes to remotely characterise rheumatoid arthritis**
 <br/>
 Andrew P. Creagh, Valentin Hamy, *Hang Yuan*, Gert Mertes, Ryan Tomlinson, Wen-Hung Chen, Rachel Williams, Christopher Llop, Christopher Yee, Mei Sheng Duh, Aiden Doherty, Luis Garcia-Gancedo, David A. Clifton
- <br/> *medRxiv, 2022* <br/> 
+ <br/> *npj Digital Medicine, 2024* <br/> 
  <sub><sup> [Paper](https://www.medrxiv.org/content/10.1101/2022.11.18.22282305v1)  &nbsp;  [Code](https://github.com/OxWearables/ssl-wearables)  &nbsp; [Web](https://www.andrewcreagh.com/blog/2022/WeaRAble-PRO/) </sup></sub>
 
 
-**Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data**
-<br/> *Hang Yuan*, Shing Chan, Andrew P. Creagh, Catherine Tong, David A. Clifton, Aiden Doherty
- <br/> *arXiv, 2022* <br/> 
- <sub><sup> [Paper](https://arxiv.org/abs/2206.02909)  &nbsp;  [Code](https://github.com/OxWearables/ssl-wearables)  &nbsp; [Web](https://oxwearables.github.io/ssl-wearables/) </sup></sub>
 
 
 <!-- **Training Ethically Responsible AI Researchers: a Case Study**
