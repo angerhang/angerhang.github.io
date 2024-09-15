@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Thinking as a young scientist
-date: 2024-08-10
+date: 2024-09-15
 comments: true
 ---
 
