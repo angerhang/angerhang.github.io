@@ -14,6 +14,7 @@ Inspired by the CV of failures project, I thought of doing something similar bot
 * 1 paper withdrawn from ICLR: 2021
 
 ### Fellowships & Scholarship
+* NSF SBIR grant (rejection twice), 2025
 * Schmidt Science Fellowship (rejection after interview), 2025 
 * NVIDIA Academic Hardware Grant Program (no interview), 2022
 * Teaching and research scholarship, Oriel College (no interview): 2021
