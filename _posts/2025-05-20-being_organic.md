@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Being Organic
-date: 2025-05-20
+date: 2025-05-19
 comments: true
 ---
 
