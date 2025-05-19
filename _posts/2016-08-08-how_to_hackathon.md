@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yet another guide to Hackathon
+title: Yet Another Guide to Hackathon
 date: 2016-08-08
 comments: true
 ---

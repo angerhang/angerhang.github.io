@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Thinking as a young scientist
+title:  Thinking as a Young Scientist
 date: 2024-09-15
 comments: true
 ---

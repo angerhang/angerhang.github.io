@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Why I took off my headphones
+title:  Why I Took Off My Headphones
 date: 2022-02-02
 comments: true
 ---

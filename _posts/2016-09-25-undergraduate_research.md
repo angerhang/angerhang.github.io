@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undergraduate research 101
+title: Undergraduate Research 101
 date: 2016-09-25
 comments: true
 ---

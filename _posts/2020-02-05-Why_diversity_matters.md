@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Why Diversity matters?
+title:  Why Diversity Matters?
 date: 2020-02-09
 comments: true
 ---
