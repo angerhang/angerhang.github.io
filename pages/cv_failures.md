@@ -6,7 +6,7 @@ comments: true
 cover_name: CV of failures
 ---
 
-Inspired by the CV of failures project, I thought of doing something similar both as an academic or as a person. I found reading other people's CVs of failures quite inspiring because it gives insights into how many times even the most successful people fail. For a large part of my life, my life has been a series of failures too. I hope this list could encourage others when they are struggling and remind me that it is ok to fail. All you need to do is to fail, evaluate and try again next time.
+Inspired by the CV of Failures Project, I thought of doing something similar to enumerate my personal and career setbacks. I found reading other people's CVs of failures quite inspiring because even the most successful people have many failures. For a large part of my life, it's been a series of failures too. I hope this list could encourage others when they are struggling and remind me that it is ok to fail. All you need to do is to fail, learn and try again next time.
 
 
 ### Papers
