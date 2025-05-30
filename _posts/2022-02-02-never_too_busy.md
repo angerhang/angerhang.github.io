@@ -36,7 +36,7 @@ One final issue that I discovered when putting my headphones on is that I was lo
 
 But life is not just the finish line. It is also about how we get there, and there are sceneries that we might have missed in the journey. I certainly don't want my life to be just about achieving one goal after another. I would prefer to enjoy the journey to see what's there than just trying to reach what's planned, i.e., getting a bigger paycheck or publishing more papers. 
 
-The process of getting somehow is equally if not more important than the end goal. This is particularly true in scientific discovery, where it is relatively easy to come up with a conclusion, but the conclusion is only believable if people also have trust in the way that it is derived follows certain rigour and logical reasoning.
+The process of getting somewhere is equally if not more important than the end goal. This is particularly true in scientific discovery, where it is relatively easy to come up with a conclusion, but the conclusion is only believable if people also have trust in the way that it is derived follows certain rigour and logical reasoning.
 
 I am not sure if a similar analogy will also hold in a startup space. In a sense, many companies (Reddit, Sony, and Slack) eventually got big not only because they tried to reach one target after another. They all had to pivot at some point during their growth because something else they discovered was more promising.
 
