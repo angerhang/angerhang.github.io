@@ -14,6 +14,7 @@ Inspired by the CV of Failures Project, I thought of doing something similar to 
 * 1 paper withdrawn from ICLR: 2021
 
 ### Fellowships & Scholarship
+* Encode AI Fellowship (rejection without interview), 2025
 * NSF SBIR grant (rejection twice), 2025
 * Schmidt Science Fellowship (rejection after interview), 2025 
 * NVIDIA Academic Hardware Grant Program (no interview), 2022
