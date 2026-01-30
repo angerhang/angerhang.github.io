@@ -7,26 +7,31 @@ cover_name: The World of Science
 image: /assets/images/research_cover.jpg
 ---
 
-I am an NDPH Early Career Research Fellow at the Nuffield Department of Population Health at Oxford. My primary research interest is to understand how can wearables improve human health. Wearable devices can provide *longitudinal 
-passive monitoring* of human behavior and physiology. Few other technologies can match wearable data in its length at the same 
-level of temporal granularity. As the measurement tools improve and longer data become available, we are blessed with this gold mine that contains a huge amount of under-exploited data which could *transform our understanding of human physiology and improve human health*.  
+I develop machine learning methods that learn meaningful representations from wearable biosignals to understand human behaviour and improve human health at scale. My work focuses on three levels of <span style="color: #0080ff;">representation learning of human behaviour</span>: 
 
-Main research interests: 
-- How to best represent human sensing time series data using machine learning? 
-- The association between device-measured behavior and human diseases.
-- How to use wearable with omics data for genomics discovery and risk prediction? 
+* <span style="color: #0080ff;">Low-level movement representations</span> that generalise across activities and populations, 
+* <span style="color: #0080ff;">High-level behavioural representations</span> that compress long-term wearable time series for biological and genomic discovery, and 
+* <span style="color: #0080ff;">Multi-modal health representations</span> that integrate biosignals with genetic and physiological data to quantify health along a continuum. 
+
+Using self-supervised and data-driven approaches, I build foundation models for wearable data that reduce reliance on labels while improving robustness and real-world applicability. My goal is to turn continuous human sensing into a scalable, interpretable foundation for preventive and precision health.
+
+I daydream of a future where wearable sensing and genetic data can be used to personalise individual treatment plans for all.
+
+<div style="text-align: center;">
+    <figure >
+    <img src="/assets/images/directions.jpg" style="width: 400px;">
+    <figcaption>
+ Figure 1: Representation Learning of Device-measured Human Behaviour 
+    </figcaption>
+    </figure>
+</div>
 
 
- My doctoral research is supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by the Li Kai Shing Foundation and Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
+My doctoral research was supervised by [Aiden Doherty](https://www.ndph.ox.ac.uk/team/aiden-doherty) and [Simon Kyle](https://www.ndcn.ox.ac.uk/team/simon-kyle), which has been generously sponsored by Novo Nordisk. I also worked with [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Timor Kadir](https://www.robots.ox.ac.uk/~timork/) for my rotation project.
 Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herbert/) and [Benn Godde](https://www.researchgate.net/profile/Ben_Godde) on echo state neural networks for my undergraduate thesis. My master's thesis was supervised by [François Fleuret](https://www.idiap.ch/~fleuret/) and [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann).
 
 
-<!-- ### Academic service
-* PC Member for Neurips ML4Health 2020, 2021, 2022.
-* PC member Neurips Timeseries4Health, 2022.
-* Reviewer for [Journal of Open Source Software](https://joss.theoj.org)
-* PC member of OxStat -->
-
+I enjoy playing tennis and bounldering outside of work. At times, I also join the other side and use my organic intelligence to augment aritificial intellgience at startups like [Lume Health](https://www.lumehealth.io).
 
 ### Selected publications
 **Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data**
