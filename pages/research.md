@@ -1,5 +1,5 @@
 ---
-layout: exp
+layout: exp 
 title: "Research"
 date: 2016-06-21
 comments: true
@@ -32,6 +32,14 @@ Previously I worked with [Herbert Jaeger](http://minds.jacobs-university.de/herb
 
 
 I enjoy playing tennis and bounldering outside of work. At times, I also join the other side and use my organic intelligence to augment aritificial intellgience at startups like [Lume Health](https://www.lumehealth.io).
+
+Finally, I am always looking forward motivated students to do projects with me. If you would like to study with me, feel free to email me with your interests, CV and code sample with a subject headline *[apple]*.
+
+### Students
+* 2026: Firas Rarwish (Oxford Stats-ML CDT rotation)
+* 2025: Kyra Edwards (Oxford HDS CDT rotation)
+* 2024: Xinyi Cai (Oxford EngSci summer intern)
+
 
 ### Selected publications
 **Self-supervised Learning for Human Activity Recognition Using 700,000 Person-days of Wearable Data**
